@@ -490,3 +490,77 @@ footer p span {
     }
     
 }
+/*chatbot*/
+footer h4 {
+    color: #ccc;
+    font-weight: 400;
+}
+footer .services {
+    margin-bottom: 20px;
+    
+    justify-content: center;
+    align-items: center;
+}
+footer .services .service form {
+    margin-bottom: 15px;
+    justify-content: center;
+    align-items: center;
+}
+footer .services .service form  label {
+    color: #fff;
+    margin-left: 20px;
+    text-transform: uppercase;
+
+}
+
+footer .services .service form  input:hover {
+    box-shadow: 0 0 10px #29d9d5;
+}
+footer .services .service form  input {
+    width: fit-content;
+    padding: 8px 40px;
+    background-color: #111;
+    border: 1px solid #111;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.5s;
+
+}
+footer #attention {
+    font-size: 14px;
+    text-align: center;
+    
+    text-indent: 20px;
+    color: red;
+    margin-bottom: 15px;
+}
+ /*infos CSS  */
+ .infos img {
+    margin-top: 10px;
+    height: 250px;
+    width: 100%;
+    border-radius:0;
+    object-fit:cover;
+     box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    transition: 0.5s;
+}
+ .infos p {
+    margin-top: 5px;
+ }
+ .infos span {
+    color: #F85557;
+ }
+ .infos div {
+    padding: 20px;
+    border: 1px solid #fff;
+    background-color: #fff;
+    margin: 10px 0;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    animation: identifier 0.5s ease-out;
+ }
+ /*animation identifier*/
+ @keyframes identifier {
+    from{
+        transform: translateY(100px);
+    }
+}

@@ -35,7 +35,7 @@
             <form action="">
                 <div>
                     <label >Pays</label>
-                    <input type="text" placeholder="Entrez un Pays">
+                    <input type="text" placeholder="Entrez un Pays" class="text">
                 </div>
                 <div>
                     <label >Ville</label>
@@ -45,10 +45,11 @@
                     <label >Région</label>
                     <input type="text" placeholder="Entrez une Région">
                 </div>
-                <input type="submit" value="Voir">
+                <input type="submit" value="Voir" onclick="search()">
             </form>
         </div>
     </section>
+    <section class="infos"></section>
     <!--A propos section-->
     <section id="a-propos">
         <h1 class="title">à propos</h1>
@@ -160,42 +161,55 @@
             <div class="right-left">
             <div class="left">
                 <label >Nom Complet</label>
-                <input type="text">
+                <input type="text" id="nom">
                 <label >Objet</label>
-                <input type="text">
+                <input type="text" id="objet">
                 <label >Email</label>
-                <input type="text">
+                <input type="text" id="email">
                 <label >Message</label>
-               <textarea name="" id="" cols="30" rows="10"></textarea>
+               <textarea name="" id="message" cols="30" rows="10"></textarea>
 
             </div>
             <div class="right">
                 <label >Numéro</label>
-                <input type="text">
+                <input type="text" id="numero">
                 <label >Date</label>
-                <input type="text">
+                <input type="date" id="date">
                 <label >Autre Details</label>
-                <input type="text">
+                <input type="text" id="autres">
                 <label >Adresse</label>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d102239.59408210793!2d10.060876437125373!3d36.794854530130685!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12fd337f5e7ef543%3A0xd671924e714a0275!2sTunis!5e0!3m2!1sfr!2stn!4v1684613298007!5m2!1sfr!2stn" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
             </div>
         </div>
-        <button>Envoyer</button>
+        <button id="mybutton">Envoyer</button>
         </form>
     </section>
     <footer>
+        <!--chatbot-->
+        <h4 class="title-menu">Bienvenue à notre chatbot !</h4>
+        <h2 class="title"> vous pouvez nous poser des questions </h2>
+        <p id="attention">Attention!les questions sont  prédéfinis . Vous avez le droit de poser seulememt ces questions:
+            bonjour ou salut , quelle est votre numéro de téléphone ? ,quelle est votre adresse éléctronique? , Comment je peux vous contacter? , Comment je peux consulter les destinations possibles? , Quelle est votre adresse? , merci </p>
+        
+        <div class="services">
+            <div class="service">
+                <form action="" name="chatbot" >
+                    <label >Question</label>
+                    <input type="text" id="question">
+                    <input type="submit" value="Poser" id="affichage">
+                </form>
+
+
+            </div>
+          <div class="service">
+            <p id="reponse"> La réponse sera afficher ici</p>
+          </div>
+            
+        </div>
+        <hr>
         <p>Realisé par <span>Yesmine Loussaief</span> Tous les droits sont réservés.</p>
     </footer>
-    <script>
-        var toggle_menu = document.querySelector('.responsive-menu') ;
-        var menu = document.querySelector('.menu') ;
-        toggle_menu.onclick = function() {
-            toggle_menu.classList.toggle('active') ;
-            menu.classList.toggle('responsive') ;
-            //verification du formulaire
-            //region
-        }
-     </script>
+   <script src="script.js"></script>
 </body>
 </html>
